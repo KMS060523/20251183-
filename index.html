@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-camera position="0 3 6">
+        </a-camera>
+        <a-sky color="#8BE6FF">
+        </a-sky>
+
+        <a-plane position="0 0 -5" rotation="-90 0 0" width="16" height="35" color="#444444">
+        </a-plane>
+
+        <a-cylinder position="-3 2 -2" radius="0.2" height="4" color="#FF5722">
+        </a-cylinder>
+        <a-cylinder position="-1 2 -2" radius="0.2" height="4" color="#FF5722">
+        </a-cylinder>
+        <a-cylinder position="1 2 -2" radius="0.2" height="4" color="#FF5722">
+        </a-cylinder>
+        <a-cylinder position="3 2 -2" radius="0.2" height="4" color="#FF5722">
+        </a-cylinder>
+
+        <a-box position="-2 1 -2" width="1.8" height="2" depth="0.2" color="#FFC107"
+               a-animation="position" to="-2 3 -2" direction="alternate" dur="2000" repeat="indefinite" easing="linear">
+        </a-box>
+        <a-box position="0 2 -2" width="1.8" height="2" depth="0.2" color="#FFC107"
+               animation="position" to="0 0 -2" direction="alternate" dur="1500" repeat="indefinite" easing="linear">
+        </a-box>
+        <a-box position="2 1 -2" width="1.8" height="2" depth="0.2" color="#FFC107"
+               animation="position" to="2 3 -2" direction="alternate" dur="2500" repeat="indefinite" easing="linear">
+        </a-box>
+
+        <a-cylinder position="0 0.5 -7" radius="0.4" height="1" color="#9E9E9E">
+        </a-cylinder>
+        <a-box position="0 1 -7" width="8" height="0.2" depth="4" color="#00BCD4"
+               animation="rotation" from="0 0 -15" to="0 0 15" direction="alternate" dur="3000" repeat="indefinite" easing="linear">
+        </a-box>
+
+        <a-box position="0 5 -12" width="0.5" height="0.5" depth="0.5" color="#333333"
+               animation="rotation" to="0 360 0" dur="4000" repeat="indefinite" easing="linear">
+        </a-box>
+
+        <a-cylinder position="0 -1.5 0" radius="0.1" height="3" color="#9C27B0">
+        </a-cylinder>
+
+        <a-box position="0 -3 0" width="0.4" height="0.4" depth="0.4" color="#E91E63">
+        </a-box>
+
+        <a-box position="0 -3 0" width="2" height="0.6" depth="0.6" color="#E91E63">
+        </a-box>
+
+
+    </a-scene>
+</body>
+</html>
